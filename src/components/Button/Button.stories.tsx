@@ -4,7 +4,8 @@ import { Button } from './Button';
 
 export default {
     title: 'Components/Button',
-    component: Button
+    component: Button,
+    argTypes: { }
 } as ComponentMeta<typeof Button>;
 
 const Template: ComponentStory<typeof Button> = ( args ) => <Button {...args } />;
@@ -12,5 +13,5 @@ const Template: ComponentStory<typeof Button> = ( args ) => <Button {...args } /
 export const Default = Template.bind( {} );
 
 Default.args = {
-    label: 'Click Me!'
+    label: 'Label'
 }
